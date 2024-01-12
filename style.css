@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+}
+#back {
+  width: 100%;
+  height: 100vh;
+}
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+#workingarea {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+}
+#nav {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav a {
+  pointer-events: all;
+}
+#nav img {
+  height: 60px;
+}
+
+#nleft {
+  display: flex;
+  align-items: center;
+  gap: 6vw;
+}
+#nleft a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 6vw;
+}
+#nright a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#hero {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translate(0, -50%);
+}
+#heroleft {
+  min-width: 50%;
+}
+#heroleft .elem {
+  position: relative;
+  height: 9vw;
+  overflow: hidden;
+}
+
+#heroleft .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 0.9;
+  font-family: "Kajiro";
+  color: white;
+  font-weight: 100;
+  font-size: 11vw;
+}
+#heroleft .elem h1:nth-child(1) {
+  top: 0;
+}
+#heroleft button {
+  pointer-events: all;
+  padding: 0.2vw 1.8vw;
+  font-size: 2vw;
+  font-size: 2.5vw;
+  font-family: "kajiro";
+  letter-spacing: 0.3vw;
+  margin-top: 2vw;
+}
+#heroright {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: flex-end;
+}
+#heroright p {
+  color: white;
+  font-size: 0.8vw;
+  font-weight: 300;
+}
+#heroright #imagediv {
+  width: 80%;
+
+  height: 8vw;
+  margin: 1.5vw 0 3vw 0;
+  background-image: url(https://images.unsplash.com/photo-1484186139897-d5fc6b908812?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcnRyYWl0JTIwd2l0aCUyMGdvZ2dsZXN8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+#heroright p:nth-child(3) {
+  margin-bottom: 5vw;
+}
